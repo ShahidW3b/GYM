@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | C4 Pro GYM</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">C4 Pro GYM</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="admin-dashboard.html">Dashboard</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="workout.html">Workouts</a></li>
+        <li><a href="session-booking.html">Book Session</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallery-page">
+    <h2>Our Gallery</h2>
+    <div class="tabs">
+      <button onclick="showGallery('gym')" class="active-tab">Gym Facilities</button>
+      <button onclick="showGallery('athletes')">Athletes</button>
+      <button onclick="showGallery('achievements')">Achievements</button>
+    </div>
+
+    <section id="gym" class="gallery-section">
+      <div class="gallery-grid">
+        <img src="images/gym1.jpg" alt="Gym Equipment" />
+        <img src="images/cardio.jpg" alt="Cardio Zone" />
+        <img src="images/stretch.jpg" alt="Stretch Area" />
+        <img src="images/weightlifting.jpg" alt="Weight Area" />
+      </div>
+    </section>
+
+    <section id="athletes" class="gallery-section hidden">
+      <div class="gallery-grid">
+        <img src="images/athlete1.jpg" alt="Athlete 1" />
+        <img src="images/athlete2.jpg" alt="Athlete 2" />
+        <img src="images/athlete3.jpg" alt="Athlete 3" />
+        <img src="images/athlete4.jpg" alt="Athlete 4" />
+      </div>
+    </section>
+
+    <section id="achievements" class="gallery-section hidden">
+      <div class="gallery-grid">
+        <img src="images/trophy1.jpg" alt="Achievement 1" />
+        <img src="images/trophy2.jpg" alt="Achievement 2" />
+        <img src="images/trophy3.jpg" alt="Achievement 3" />
+        <img src="images/certificate.jpg" alt="Certificate" />
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function showGallery(sectionId) {
+      const sections = document.querySelectorAll(".gallery-section");
+      const buttons = document.querySelectorAll(".tabs button");
+
+      sections.forEach(section => {
+        section.classList.add("hidden");
+      });
+
+      buttons.forEach(btn => {
+        btn.classList.remove("active-tab");
+      });
+
+      document.getElementById(sectionId).classList.remove("hidden");
+      event.target.classList.add("active-tab");
+    }
+  </script>
+</body>
+</html>

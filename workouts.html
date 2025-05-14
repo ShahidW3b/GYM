@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workouts | C4 Pro GYM</title>
+  <link rel="stylesheet" href="workouts.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">C4 Pro GYM</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="workout-section">
+    <h2>Workout Plans</h2>
+    <div class="workout-grid">
+
+      <div class="workout-card">
+        <h3>Full Body Strength</h3>
+        <p>Includes squats, bench press, deadlifts, and rows to build total-body power.</p>
+        <div class="workout-buttons">
+          <button onclick="viewPlan('fullbody')">View Plan</button>
+          <a href="plans/fullbody.pdf" download>Download PDF</a>
+        </div>
+      </div>
+
+
+      <div class="workout-card">
+        <h3>Bodybuilding Split</h3>
+        <p>Focused muscle group workouts: chest/triceps, back/biceps, legs, and shoulders.</p>
+        <div class="workout-buttons">
+          <button onclick="viewPlan('bodybuilding')">View Plan</button>
+          <a href="plans/bodybuilding.pdf" download>Download PDF</a>
+        </div>
+      </div>
+
+      <div class="workout-card">
+        <h3>Mobility & Recovery</h3>
+        <p>Stretching, foam rolling, and yoga flows to improve flexibility and recovery.</p>
+        <div class="workout-buttons">
+          <button onclick="viewPlan('mobility')">View Plan</button>
+          <a href="plans/mobility.pdf" download>Download PDF</a>
+        </div>
+      </div>
+
+      <div class="workout-card">
+        <h3>Cardio Blast</h3>
+        <p>Endurance sessions with treadmill runs, cycling, rowing, and jump rope intervals.</p>
+        <div class="workout-buttons">
+          <button onclick="viewPlan('cardio')">View Plan</button>
+          <a href="plans/cardio.pdf" download>Download PDF</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function viewPlan(planId) {
+      alert("Opening plan for: " + planId.toUpperCase() + "\n(This can be replaced with a detailed page or modal.)");
+    }
+  </script>
+</body>
+</html>

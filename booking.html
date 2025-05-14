@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Session Booking | C4 Pro GYM</title>
+  <link rel="stylesheet" href="booking.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">C4 Pro GYM</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="booking-section">
+    <h2>Book a Training Session</h2>
+    <form class="booking-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Your name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" placeholder="you@example.com" required />
+
+      <label for="trainer">Select Trainer:</label>
+      <select id="trainer" required>
+        <option value="">-- Choose Trainer --</option>
+        <option value="fitness">John - Fitness</option>
+        <option value="bodybuilding">Sarah - Bodybuilding</option>
+        <option value="fatloss">Mike - Fat Loss</option>
+      </select>
+
+      <label for="date">Session Date:</label>
+      <input type="date" id="date" required />
+
+      <label for="time">Session Time:</label>
+      <input type="time" id="time" required />
+
+      <button type="submit">Book Now</button>
+    </form>
+  </main>
+
+  <script>
+    document.querySelector(".booking-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Your session has been booked successfully!");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

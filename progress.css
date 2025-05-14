@@ -1,0 +1,80 @@
+:root {
+    --yellow: #f1c40f;
+    --black: #111;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    color: white;
+  }
+  
+  header {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .progress-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .progress-section h2 {
+    color: var(--yellow);
+    margin-bottom: 2rem;
+  }
+  
+  .progress-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+  
+  .progress-card {
+    background-color: #222;
+    border: 2px solid var(--yellow);
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .progress-card:hover {
+    transform: translateY(-5px);
+    background-color: #1a1a1a;
+  }
+  
+  .progress-card h3 {
+    color: var(--yellow);
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: var(--yellow);
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  a:hover {
+   color:yellow ;
+  }

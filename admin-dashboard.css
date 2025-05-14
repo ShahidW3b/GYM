@@ -1,0 +1,104 @@
+:root {
+    --yellow: #f1c40f;
+    --black: #111;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--black);
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: var(--yellow);
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: black;
+  }
+  
+  #menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: yellow;
+  }
+  
+  .dashboard {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .dashboard h2 {
+    color: var(--yellow);
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-left: 5px solid var(--yellow);
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .card h3 {
+    color: var(--yellow);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive Menu Button */
+  @media (max-width: 768px) {
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background: #000;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      padding: 1rem;
+    }
+  
+    nav ul.show {
+      display: flex;
+    }
+  
+    #menu-btn {
+      display: block;
+    }
+  }
+  a:hover {
+    background-color: yellow;
+    display: block;
+  
+  }
+  

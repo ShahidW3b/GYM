@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | C4 Pro GYM</title>
+  <link rel="stylesheet" href="admin-dashboard.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">C4 Pro GYM</div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="manage-users.html">Manage Users</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+    <div id="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <main class="dashboard">
+    <h2>Welcome, Admin!</h2>
+    <div class="dashboard-grid">
+      <div class="card">
+        <h3>Total Members</h3>
+        <p>150 active</p>
+        <p>20 Pendding</p>
+      </div>
+      <div class="card">
+        <h3>Total Trainers</h3>
+        <p>10 on duty</p>
+        <p> 05 on stuff</p>
+      </div>
+      <div class="card">
+        <h3>Reports Pending</h3>
+        <p>3 new reports</p>
+        <p>1 old report</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>

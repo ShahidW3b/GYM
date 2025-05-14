@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manage Users | Admin Panel</title>
+  <link rel="stylesheet" href="manage-users.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">C4 Pro GYM</div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="admin-dashboard.html">Dashboard</a></li>
+        <li><a href="manage-users.html">Manage Users</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="report.html">Reports</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+    <div id="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <main class="manage-users">
+    <h2>Manage Users</h2>
+
+    <form id="addUserForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="text" id="username" placeholder="Username" required />
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="Member">Member</option>
+        <option value="Trainer">Trainer</option>
+        <option value="Admin">Admin</option>
+      </select>
+      <button type="submit">Add User</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Username</th>
+          <th>Role</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="userTable">
+        <!-- Dynamic rows will be inserted here -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="manage-users.js"></script>
+</body>
+</html>

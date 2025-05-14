@@ -1,0 +1,105 @@
+:root {
+    --yellow: #f1c40f;
+    --black: #111;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    color: white;
+  }
+  
+  header {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .workout-section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .workout-section h2 {
+    color: var(--yellow);
+    margin-bottom: 2rem;
+  }
+  
+  .workout-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+  
+  .workout-card {
+    background-color: #222;
+    padding: 1.5rem;
+    border: 2px solid var(--yellow);
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .workout-card h3 {
+    color: var(--yellow);
+    margin-bottom: 0.5rem;
+  }
+  
+  .workout-card p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .workout-card:hover {
+    transform: translateY(-5px);
+    background-color: #1a1a1a;
+  }
+  
+  .workout-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+  
+  .workout-buttons button,
+  .workout-buttons a {
+    flex: 1;
+    background-color: var(--yellow);
+    color: #111;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .workout-buttons button:hover,
+  .workout-buttons a:hover {
+    background-color: #d4ac0d;
+  }
+  a:hover {
+    color:yellow ;
+  }

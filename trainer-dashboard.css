@@ -1,0 +1,139 @@
+.dashboard {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .dashboard h2 {
+    color: var(--yellow);
+    margin-bottom: 2rem;
+  }
+  
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-left: 5px solid var(--yellow);
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .card h3 {
+    color: var(--yellow);
+    margin-bottom: 0.5rem;
+  }
+
+
+
+
+
+  :root {
+  --yellow: #ffcc00;
+  --black: #111;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--black);
+  color: var(--white);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--black);
+  padding: 1rem 2rem;
+  border-bottom: 2px solid var(--yellow);
+  position: relative;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--yellow);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+#menu-btn {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--yellow);
+}
+
+.hero p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.btn {
+  background: var(--yellow);
+  color: var(--black);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: var(--black);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  #menu-btn {
+    display: block;
+  }
+}
+a:hover {
+  color:black ;
+  background-color: yellow;
+  display: block;
+
+}

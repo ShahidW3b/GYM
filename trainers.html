@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Trainers | C4 Pro GYM</title>
+  <link rel="stylesheet" href="trainers.css">
+</head>
+<body>
+  <header>
+    <div class="logo">C4 Pro GYM</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="trainers-section">
+    <h2>Meet Our Expert Trainers</h2>
+    <div class="trainer-grid">
+      <div class="trainer-card" onclick="showProfile(0)">
+        <img src="orfan.jpg" alt="Fitness Trainer">
+        <h3>Orfan - Fitness Trainer</h3>
+      </div>
+      <div class="trainer-card" onclick="showProfile(1)">
+        <img src="resa.jpg" alt="Bodybuilding Trainer">
+        <h3>Reza - Bodybuilding Coach</h3>
+      </div>
+      <div class="trainer-card" onclick="showProfile(2)">
+        <img src="parwis.jpg" alt="Fat Loss Coach">
+        <h3>Parwis - Fat Loss Specialist</h3>
+      </div>
+    </div>
+
+    <div class="trainer-detail" id="trainerDetail">
+      <button onclick="closeProfile()">Close</button>
+      <h3 id="trainerName"></h3>
+      <p><strong>Experience:</strong> <span id="experience"></span></p>
+      <p><strong>Achievements:</strong></p>
+      <ul id="achievements"></ul>
+      <p><strong>Certificates:</strong></p>
+      <ul id="certificates"></ul>
+    </div>
+  </main>
+
+  <script src="trainers.js"></script>
+</body>
+</html>

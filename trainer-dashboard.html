@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Member Dashboard | C4 Pro GYM</title>
+  <link rel="stylesheet" href="trainer-dashboard.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">C4 Pro GYM</div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+    <div id="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <main class="dashboard">
+    <h2>Welcome, Trainer!</h2>
+    <div class="dashboard-grid">
+
+      <div class="card">
+        <h3>Today's Sessions</h3>
+        <p>3 clients scheduled</p>
+        <p> morning & evening sessions </p>
+      </div>
+
+      <div class="card">
+        <h3>Pending Messages</h3>
+        <p> 3 messages </p>
+        <p> 2 unread messages <p>
+      </div>
+
+      <div class="card">
+        <h3> Client Progress Updates</h3>
+        <p>5 clients updated logs</p>
+        <p>1 admin updated logs</p>
+   
+      </div>
+    </div>
+  </main>
+
+  <script src="trainer-dashboard.js"></script>
+</body>
+</html>

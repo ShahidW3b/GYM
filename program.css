@@ -1,0 +1,77 @@
+:root {
+    --yellow: #f1c40f;
+    --black: #111;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--black);
+    color: #fff;
+  }
+  
+  header {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .programs {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .programs h2 {
+    color: var(--yellow);
+    margin-bottom: 2rem;
+  }
+  
+  .program-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .program-card {
+    background: #1a1a1a;
+    border-left: 5px solid var(--yellow);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: left;
+  }
+  
+  .program-card h3 {
+    color: var(--yellow);
+    margin-bottom: 0.5rem;
+  }
+  
+  .program-card ul {
+    padding-left: 1.5rem;
+  }
+  
+  .program-card li {
+    margin-bottom: 0.5rem;
+  }
+
+  a:hover{
+    color:yellow ;
+  }

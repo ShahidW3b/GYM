@@ -1,0 +1,146 @@
+:root {
+    --yellow: #f1c40f;
+    --black: #111;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    color: white;
+  }
+  
+  header {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a.active {
+    color: var(--yellow);
+    font-weight: bold;
+  }
+  
+  .gallery-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .gallery-page h2 {
+    color: var(--yellow);
+    margin-bottom: 1rem;
+  }
+  
+  .tabs {
+    margin-bottom: 2rem;
+  }
+  
+  .tabs button {
+    padding: 0.7rem 1.5rem;
+    margin: 0 0.5rem;
+    background-color: transparent;
+    border: 2px solid var(--yellow);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .tabs button:hover,
+  .tabs .active-tab {
+    background-color: var(--yellow);
+    color: var(--black);
+  }
+  
+  .gallery-section {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 2rem;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid var(--yellow);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  a:hover {
+    color:yellow;
+  }
+
+  @media screen and (max-width: 600px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+  
+    .tabs {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0 1rem;
+    }
+  
+    .tabs button {
+      width: 100%;
+      font-size: 1rem;
+    }
+  
+    .gallery-grid {
+      padding: 0 1rem;
+      grid-template-columns: 1fr;
+    }
+  
+    .gallery-page h2 {
+      font-size: 1.5rem;
+    }
+  
+    .logo {
+      font-size: 1.2rem;
+    }
+  }

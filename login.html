@@ -1,0 +1,45 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | C4 Pro GYM</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">C4 Pro GYM</div>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="signUp.html">Sign Up</a></li>
+  
+      </ul>
+    </nav>
+    <div id="menu-btn" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <main class="login-container">
+    <h2>Login to Your Account</h2>
+    <form id="loginForm">
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <label for="role">I am a:</label>
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="member">Member</option>
+        <option value="trainer">Trainer</option>
+        <option value="admin">Admin</option>
+      </select>
+
+      <button type="submit" class="btn">Login</button>
+    </form>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
