@@ -1,36 +1,47 @@
-# C4 Pro GYM Website
+<div align="center">
+  
+ 
 
-Welcome to the official website of C4 Pro GYM, a modern fitness center offering world-class facilities, expert trainers, and specialized fitness programs. This project is designed and developed using HTML, CSS, and JavaScript to ensure fast performance, clean UI, and full responsiveness across all devices.
+  <h2 align="center">GYM - C4 ProGYM Website</h2>
 
-## Developed By
-Shahabuddin Shahid  
-Frontend Developer & computer science student--
+A multi-role, fully responsive GYM Management Website <br> built using HTML, CSS, and JavaScript. <br> 
+Designed with dedicated login/signup access for users, trainers, and administrators <br> 
+streamlining fitness center operations and experience.
 
-## Features
+  <a href="https://gym-opal-one-11.vercel.app/"><strong>➥ Live Demo</strong></a>
 
-- Fully responsive website layout
-- Bold modern design with a black and yellow color scheme
-- Multi-page structure including:
-  - Home
-  - About Us
-  - Programs (Fitness, Bodybuilding, Fat Loss)
-  - Trainers
-  - Member Login / Dashboard
-  - Admin Panel
-- Separate dashboards for:
-  - Members
-  - Trainers
-  - Admin
-- Smooth navigation with a user-friendly interface
-- Clean, well-commented code for easy scalability
+</div>
 
----
+<br />
 
-## Technologies Used
+### Demo Screeshots
 
-- HTML5 – Structure & Semantics  
-- CSS3 – Styling & Layout  
-- JavaScript – Interactivity & Functionality  
+![C4 ProGYM Demo](gym.jog "Gym Image")
 
----
+<br> 
 
+🧩 Core Features
+	•	👤 User Panel
+	•	Signup/Login functionality
+	•	View available workout plans and trainers
+	•	Book training sessions or packages 
+    <br>
+	•	🧑‍🏫 Trainer Panel
+	•	Login/Signup to manage training sessions
+	•	View assigned users and update progress reports
+	•	Respond to user queries
+    <br> 
+	•	🛠️ Admin Panel
+	•	Full control over trainers and user accounts
+	•	Dashboard for analytics and system monitoring
+
+<br> 
+### Run Locally
+
+To clone and run the website locally:
+
+```bash
+git clone https://github.com/ShahidW3b/gym-management.git
+cd gym-management
+```
+Open the index.html file in your browser. 
