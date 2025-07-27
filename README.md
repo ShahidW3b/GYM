@@ -26,11 +26,13 @@ streamlining fitness center operations and experience.
 	•	View available workout plans and trainers
 	•	Book training sessions or packages 
     <br>
+    <br>
 	•	🧑‍🏫 Trainer Panel
 	•	Login/Signup to manage training sessions
 	•	View assigned users and update progress reports
 	•	Respond to user queries
     <br> 
+    <br>
 	•	🛠️ Admin Panel
 	•	Full control over trainers and user accounts
 	•	Dashboard for analytics and system monitoring
