@@ -16,11 +16,11 @@ streamlining fitness center operations and experience.
 
 ### Demo Screeshots
 
-![C4 ProGYM Demo](gym.jog "Gym Image")
+![C4 ProGYM Demo](gym.jpg "Gym Image")
 
 <br> 
 
-🧩 Core Features
+🧩 Core Features <br>
 	•	👤 User Panel
 	•	Signup/Login functionality
 	•	View available workout plans and trainers
