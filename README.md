@@ -20,7 +20,9 @@ streamlining fitness center operations and experience.
 
 <br> 
 
-🧩 Core Features <br>
+🧩 Core Features 
+  <br>
+  <br>
 	•	👤 User Panel
 	•	Signup/Login functionality
 	•	View available workout plans and trainers
