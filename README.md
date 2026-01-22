@@ -17,35 +17,3 @@ streamlining fitness center operations and experience.
 ### Demo Screeshots
 
 ![C4 ProGYM Demo](gym.jpg "Gym Image")
-
-<br> 
-
-🧩 Core Features 
-  <br>
-  <br>
-	•	👤 User Panel
-	•	Signup/Login functionality
-	•	View available workout plans and trainers
-	•	Book training sessions or packages 
-    <br>
-    <br>
-	•	🧑‍🏫 Trainer Panel
-	•	Login/Signup to manage training sessions
-	•	View assigned users and update progress reports
-	•	Respond to user queries
-    <br> 
-    <br>
-	•	🛠️ Admin Panel
-	•	Full control over trainers and user accounts
-	•	Dashboard for analytics and system monitoring
-
-<br> 
-### Run Locally
-
-To clone and run the website locally:
-
-```bash
-git clone https://github.com/ShahidW3b/gym-management.git
-cd gym-management
-```
-Open the index.html file in your browser. 
